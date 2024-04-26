@@ -13,23 +13,23 @@ public class FantasyFootball
         
         for(int i = 0; i < 5; i++)
         {
-            System.out.println("Enter Player you would like on your team: ");
+            System.out.println("Enter name of player to add: ");
             String player = sc.nextLine();
             int playerIndex = search(availablePlayers, player);
             if(playerIndex > -1)
             {
-                System.out.println("Great! That player is added to your team!");
+                System.out.println("Successfully added player");
                 team[i] = player;
                 availablePlayers.remove(playerIndex);
             }
             else
             {
-                System.out.println("That player is not available, please pick another player.");
+                System.out.println(player + " is not an available player.");
                 i--;
             }
             System.out.println("");
         }
-        System.out.println("Your team is:");
+        System.out.println("Final Team Roster: ");
         for(int i = 0; i < 5; i++)
         {
             System.out.println(team[i]);
