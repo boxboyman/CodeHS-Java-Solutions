@@ -1,16 +1,27 @@
-  
 public class ClothingTester
 {
     public static void main(String[] args)
     {
-        // Start here!
-        TShirt a = new TShirt("L", "red", "denim");
-        Jeans b = new Jeans("S");
-        Sweatshirt c = new Sweatshirt("L", "green", true);
-        Jeans d = new Jeans("L");
-        System.out.println(a);
-        System.out.println(b);
-        System.out.println(c);
-        System.out.println(d);
+        TShirt tShirt = new TShirt("large", "white", "cotton");
+ 
+        Sweatshirt sweatShirt = new Sweatshirt("XL", "blue", true);
+ 
+        Jeans jeans = new Jeans("10");
+        Clothing clothing = new Clothing("small", "red");
+ 
+        System.out.println("You want a " + tShirt.getSize() + " "
+            + tShirt.getFabric() + " t-shirt in " + tShirt.getColor() + ".");
+        if (sweatShirt.hasHood())
+        {
+            System.out.println("And a " + sweatShirt.getSize() + " "
+                + sweatShirt.getColor() + " hooded sweatshirt.");
+        } else {
+            System.out.println("And a " + sweatShirt.getSize() + " "
+                + sweatShirt.getColor() + " sweatshirt.");
+        }
+        System.out.println("Also, " + jeans.getSize() + " " + jeans.getColor()
+            + " jeans.");
+        System.out.println("Finally, " + clothing.getSize() + " " + clothing.getColor()
+            + " clothes.");
     }
 }
