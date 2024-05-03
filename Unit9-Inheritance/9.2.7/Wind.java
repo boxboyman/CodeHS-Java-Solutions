@@ -1,19 +1,17 @@
 public class Wind extends Instrument
 {
-    public boolean reed;
+    private boolean reed;
     
-    public Wind(String name, String family, boolean reed)
-    {
-        super(name, family);
+    public Wind(String name, String family, boolean reed){
+        super(name,family);
         this.reed = reed;
     }
-    
-    public void setReed(boolean r)
-    {
-        reed = r;
+    public void setReed(boolean reed){
+        this.reed=reed;
     }
-    public boolean getReed()
-    {
+    public boolean getReed(){
         return reed;
     }
+    
+ 
 }
