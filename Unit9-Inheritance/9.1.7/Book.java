@@ -1,21 +1,18 @@
 public class Book
 {
     private int pages;
-    private String name;
-
-    public int getPages() {
+    private String title;
+    public int getPages(){
         return pages;
     }
-    
-    public void setPages(int pages) {
+    public void setPages(int pages){
         this.pages = pages;
     }
-    public String getName() {
-        return name;
+    public String getTitle(){
+        return title;
     }
-    
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title){
+        this.title = title;
     }
     
 }
