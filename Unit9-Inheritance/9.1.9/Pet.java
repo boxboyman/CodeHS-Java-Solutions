@@ -3,20 +3,16 @@ public class Pet extends Animal
     private String name;
     private String size;
     
-    public String getName()
-    {
+    public String getName(){
         return name;
     }
-    public void setName(String newName)
-    {
+    public void setName(String newName){
         name = newName;
     }
-    public String getSize()
-    {
+    public String getSize(){
         return size;
     }
-    public void setSize(String newSize)
-    {
+    public void setSize(String newSize){
         size = newSize;
     }
    
