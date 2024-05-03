@@ -3,13 +3,13 @@ public class PersonRunner
     public static void main(String[] args)
     {
         // Start here!
-        Person ed = new Person("Thomas Edison", "February 11, 1847");
-        Student al = new Student("Albert Einstein","March 15, 1879", 12, 5.0);
-        System.out.println(ed.getName());
-        System.out.println(ed.getBirthday());
-        System.out.println(al.getName());
-        System.out.println(al.getBirthday());
-        System.out.println(al.getGrade());
-        System.out.println(al.getGpa());
+        Person wg = new Person("Wolfgang Amadeus Mozart","January 27, 1756");
+        System.out.println("Name: " + wg.getName());
+        System.out.println("Birthday: " + wg.getBirthday());
+        Student jnh = new Student("Johann Nepomuk Hummel","November 14, 1778",10,4.0);
+        System.out.println("Name: " + jnh.getName());
+        System.out.println("Birthday: " + jnh.getBirthday());
+        System.out.println("Grade: " + jnh.getGrade());
+        System.out.println("GPA: " + jnh.getGpa());
     }
 }
