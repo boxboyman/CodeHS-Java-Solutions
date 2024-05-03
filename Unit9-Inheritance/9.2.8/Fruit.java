@@ -1,20 +1,19 @@
 public class Fruit extends HealthyFood
 {
-    private boolean local;
-    private String color;
+    private boolean inSeason;
+    private String vitamins;
     
-    public Fruit(String foodName, int calories, boolean isLocal, String foodColor)
-    {
-        super(foodName, calories, "Fruit");
-        color = foodColor;
+    public Fruit(String name, int calories, String color, boolean inSeason,String vitamins){
+        super(name,calories,"fruit",color);
+        this.inSeason = inSeason;
+        this.vitamins = vitamins;
     }
     
-    public boolean isLocal()
-    {
-        return local;
+    public boolean isInSeason(){
+        return inSeason;
     }
-    public String getColor()
-    {
-        return color;
+    public String getVitamins(){
+        return vitamins;
     }
+    
 }
