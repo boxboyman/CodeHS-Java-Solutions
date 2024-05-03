@@ -2,12 +2,12 @@ public class Laptop extends Computer
 {
    private double batteryLife;
    
-   public double getBatteryLife()
-   {
+   public double getBatteryLife(){
        return batteryLife;
    }
-   public void setBatteryLife(double newlife)
-   {
-       batteryLife = newlife;
+   
+   public void setBatteryLife(double newLife){
+       batteryLife = newLife;
    }
+   
 }
