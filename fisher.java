@@ -1,5 +1,6 @@
 public class Fisher {
-  //Name of fisher, fish names, and fish weights
+  
+  
   private String name;
   private String fish1;
   private int fish1Weight;
@@ -11,7 +12,8 @@ public class Fisher {
   private int fish4Weight;
   private String fish5;
   private int fish5Weight;
-  // Just name is needed for constructor
+  
+  
   public Fisher(String gName) {
     name = gName;
     fish1 = "n/a";
@@ -25,7 +27,8 @@ public class Fisher {
     fish5 = "n/a";
     fish5Weight = 0;
   }
-  //sets fish names and weights
+
+
   public void setFish1(String newFish) {
     fish1 = newFish;
   }
@@ -56,7 +59,8 @@ public class Fisher {
   public void setFish5Weight(int newFishWeight) {
     fish5Weight = newFishWeight;
   }
-  //gets name, fish name and fish weights
+
+
   public String getName() {
     return name;
   }
@@ -90,7 +94,8 @@ public class Fisher {
   public int getFish5Weight() {
     return fish5Weight;
   }
-  //prints the players results
+  
+
   public void print() {
     System.out.println("////////////////////////////////////////");
     System.out.println("Name: " + name);
@@ -101,7 +106,7 @@ public class Fisher {
     System.out.println("Fifth fish: " + fish5 + ", " + fish5Weight + "lbs");
     System.out.println("////////////////////////////////////////");
   }
-  //prints out the fish caught
+
   public void fishPrint() {
     System.out.println("First fish: " + fish1 + ", " + fish1Weight + "lbs");
     System.out.println("Second fish: " + fish2 + ", " + fish2Weight + "lbs");
@@ -109,7 +114,8 @@ public class Fisher {
     System.out.println("Fourth fish: " + fish4 + ", " + fish4Weight + "lbs");
     System.out.println("Fifth fish: " + fish5 + ", " + fish5Weight + "lbs");
   }
-  //fish rates with different baits
+  
+
   public String fishing(int bait) {
     String fish;
     int fishChance = (int) (Math.random() * 100 + 1);
@@ -150,11 +156,11 @@ public class Fisher {
        fish = "Nothing";
       }
     } else {
-      fish = "No fish :(";
+      fish = "no fish";
     }
     return fish;
   }
-  //weight rates with every fish
+
   public int weighing(String f) {
     int weight;
     int weightChance = (int) (Math.random() * 100 + 1);
@@ -213,11 +219,11 @@ public class Fisher {
     }
     return weight;
   }
-  //player's total weight of fish for comparison between two players
+
   public int addAll() {
     return fish1Weight + fish2Weight + fish3Weight + fish4Weight + fish5Weight;
   }
-  //prints the total fish weight out well
+
   public void printAddAll() {
     Text.printSmooth(" " + fish1Weight + fish2Weight + fish3Weight + fish4Weight + fish5Weight + " ", 75);
   }
