@@ -1,6 +1,8 @@
-import java.util.Scanner;
-  class Main {
-    public static void main(String[] args) {
+import java.util.*;
+public class MyProgram
+{
+    public static void main(String[] args)
+    {
       int bait;
       String fish;
       int weight;
@@ -19,7 +21,7 @@ import java.util.Scanner;
       for (int i = 0; i < 30; i++) {
         if (i % 2 == 0) {
           Text.clear();
-          Text.printSmooth(Text.RED + p1.getName() + " will you use worm(1), salmon eggs(2), or fishbites(3) as your bait?" + "\n", 75);
+          Text.printSmooth(Text.RED + p1.getName() + ", choose what you want to use as bait. (1) Worms - (2) Salmon Eggs - (3) Fishbites" + "\n", 75);
           bait = scan.nextInt();
           fish = p1.fishing(bait);
           Text.printSmooth("Casting", 75);
@@ -28,7 +30,7 @@ import java.util.Scanner;
           waiting();
           weight = p1.weighing(fish);
           Text.clear();
-          Text.printSmooth("You caught " + fish + " with a weight of " + weight + "lbs" + "\n", 75);
+          Text.printSmooth("You caught " + fish + " with a weight of " + weight + " lbs" + "\n", 75);
           Text.printSmooth("Would you like to keep this fish? (yes(1)/no(2))" + "\n", 75);
           yn = scan.nextInt();
           if (yn == 1) {
@@ -60,7 +62,7 @@ import java.util.Scanner;
           }
         } else {
           Text.clear();
-          Text.printSmooth(Text.BLUE + p2.getName() + " will you use worm(1), salmon eggs(2), or fishbites(3) as your bait?" + "\n", 75);
+          Text.printSmooth(Text.BLUE + p2.getName() + ", choose what you want to use as bait. (1) Worms - (2) Salmon Eggs - (3) Fishbites" + "\n", 75);
           bait = scan.nextInt();
           fish = p2.fishing(bait);
           Text.printSmooth("Casting", 75);
@@ -69,7 +71,7 @@ import java.util.Scanner;
           waiting();
           weight = p2.weighing(fish);
           Text.clear();
-          Text.printSmooth("You caught " + fish + " with a weight of " + weight + "lbs" + "\n", 75);
+          Text.printSmooth("You caught " + fish + " with a weight of " + weight + " lbs" + "\n", 75);
           Text.printSmooth("Would you like to keep this fish? (yes(1)/no(2))" + "\n", 75);
           yn = scan.nextInt();
           if (yn == 1) {
